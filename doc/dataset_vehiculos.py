@@ -38,7 +38,18 @@ print(f"Los nombres de las columnas son: {nombre_columnas}")
 
 """ 
 obtener los tipos de datos
-"""
-
 tipo_datos = df.dtypes
 print(f"Los tipos de datos son: {tipo_datos}")
+"""
+
+""" 
+estadisticas descriptivas
+estadisticas = df.describe()
+print(f"Estadisticas descriptivas: {estadisticas}")
+"""
+
+""" 
+filtrado de datos relevantes
+filtro = df[df['marca'] == 'BMW']
+print(filtro)
+"""
