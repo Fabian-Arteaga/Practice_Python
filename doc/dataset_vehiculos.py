@@ -81,4 +81,7 @@ df['consumo_promedio'] = (df['consumo_ciudad'] + df['consumo_carretera']) / 2
 print(df[['id_vehiculo', 'consumo_ciudad', 'consumo_carretera', 'consumo_promedio']])
 
 """
-
+"""ordenar los datos y obtenga un top N basado  en un criterio significativo
+top_n = df.sort_values(by='precio', ascending=False).head(5)
+print("Top 5 vehículos más caros:")
+print(top_n[['id_vehiculo', 'marca', 'modelo', 'precio']])"""""
