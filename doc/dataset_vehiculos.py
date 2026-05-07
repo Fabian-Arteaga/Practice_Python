@@ -1,5 +1,4 @@
 import pandas as pd
-import numpy as np
 import random
 
 random.seed(42)
@@ -25,6 +24,21 @@ df = pd.DataFrame({
     'consumo_carretera': [round(random.uniform(6.0, 20.0), 1) for _ in range(n)]
 })
 
-#obtener dimensiones
-obtener_dimensiones = (df.ndim)
-print(obtener_dimensiones)
+"""obtener dimensiones
+obtener_dimensiones = (df.shape)
+print("Las dimensiones son: ",obtener_dimensiones)"""
+
+
+"""" 
+obtner los nombres de las columnas
+
+nombre_columnas = list(df)
+print(f"Los nombres de las columnas son: {nombre_columnas}")
+"""
+
+""" 
+obtener los tipos de datos
+"""
+
+tipo_datos = df.dtypes
+print(f"Los tipos de datos son: {tipo_datos}")
