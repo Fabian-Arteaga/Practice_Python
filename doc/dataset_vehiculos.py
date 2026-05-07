@@ -67,9 +67,18 @@ seleccion_iloc = df.iloc[0:4,1:9]
 print(seleccion_iloc)
 """
 
+
+"""calculacion de metricas estadisticas individuales para el dataset
+media_precio = df['precio'].mean()
+mediana_precio = df['precio'].median()
+print(f"El precio promedio es: {media_precio}")
+print(f"El precio mediano es: {mediana_precio}")"""""
+
 """ 
 crear una nueva columna derivada a partir de operaciones entre otras columnas
-"""
+
 df['consumo_promedio'] = (df['consumo_ciudad'] + df['consumo_carretera']) / 2
 print(df[['id_vehiculo', 'consumo_ciudad', 'consumo_carretera', 'consumo_promedio']])
+
+"""
 
