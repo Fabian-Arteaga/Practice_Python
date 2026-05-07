@@ -53,3 +53,16 @@ filtrado de datos relevantes
 filtro = df[df['marca'] == 'BMW']
 print(filtro)
 """
+
+""" 
+seleccion de un conjunto especifico mediante loc
+seleccion_loc = df.loc[df['año']<2020]
+print(seleccion_loc)
+"""
+
+
+""" 
+selepcion de un conjunto especifico mediante iloc, filas y columnas 
+seleccion_iloc = df.iloc[0:4,1:9]
+print(seleccion_iloc)
+"""
