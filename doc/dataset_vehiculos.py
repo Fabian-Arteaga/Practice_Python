@@ -85,3 +85,22 @@ print(df[['id_vehiculo', 'consumo_ciudad', 'consumo_carretera', 'consumo_promedi
 top_n = df.sort_values(by='precio', ascending=False).head(5)
 print("Top 5 vehículos más caros:")
 print(top_n[['id_vehiculo', 'marca', 'modelo', 'precio']])"""""
+
+"""utilizar value_counts() para realizar conteos por categorias
+conteo_marcas = df['marca'].value_counts()
+print(conteo_marcas)"""
+
+""""implementar agrupaciones utilizando groupby() y multiples funciones de agregación
+agrupacion = df.groupby('marca').agg({
+    'precio': ['mean', 'min', 'max'],
+    'kilometraje': ['mean', 'min', 'max']
+})
+print(agrupacion)
+"""""
+"""realiazar una agrupaciones multiple y obtener promedios u otras metricas relevantes
+agrupacion_multiple = df.groupby(['marca', 'modelo']).agg({
+    'precio': ['mean', 'min', 'max'],
+    'kilometraje': ['mean', 'min', 'max']
+})
+print(agrupacion_multiple)
+"""""
