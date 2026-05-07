@@ -1,4 +1,5 @@
 import pandas as pd
+import numpy as np
 import random
 
 random.seed(42)
@@ -23,3 +24,7 @@ df = pd.DataFrame({
     'consumo_ciudad': [round(random.uniform(8.0, 25.0), 1) for _ in range(n)],
     'consumo_carretera': [round(random.uniform(6.0, 20.0), 1) for _ in range(n)]
 })
+
+#obtener dimensiones
+obtener_dimensiones = (df.ndim)
+print(obtener_dimensiones)
