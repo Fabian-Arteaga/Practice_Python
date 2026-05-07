@@ -66,3 +66,10 @@ selepcion de un conjunto especifico mediante iloc, filas y columnas
 seleccion_iloc = df.iloc[0:4,1:9]
 print(seleccion_iloc)
 """
+
+""" 
+crear una nueva columna derivada a partir de operaciones entre otras columnas
+"""
+df['consumo_promedio'] = (df['consumo_ciudad'] + df['consumo_carretera']) / 2
+print(df[['id_vehiculo', 'consumo_ciudad', 'consumo_carretera', 'consumo_promedio']])
+
